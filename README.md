@@ -27,7 +27,7 @@
         String sign = md5.getSignMd5WithSecretkey(order_id,order_price,secretKey);
         System.out.println(sign);
         // 接口地址请到商户后台或者文档中心进行查看
-        String url = "http://www.zhifudashi/ApiOrders/createorder"; //"http://www.zhifudashi/ApiOrders/createorder";// 发起订单地址
+        String url = "http://zfds.codecocoa.com/ApiOrders/createorder"; //"http://zfds.codecocoa.com/ApiOrders/createorde";// 发起订单地址
         Map<String, String> paramMap = new HashMap<>();// post请求的参数
         paramMap.put("order_id", order_id);
         paramMap.put("order_price", order_price);
